@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(24, 22, 22);
+}
+
+.App {
+  margin-top: 70px;
+}
+
+.main-div {
+  padding-top: 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 90%;
+  min-height: 600px;
+  height: 100%;
+  border-radius: 6px;
+  box-shadow: 4px 4px 15px 2px rgb(236, 115, 3);
+  background-color: rgba(6, 192, 118, 0.888);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.header {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(22, 22, 227);
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.searchboxdiv {
+  display: flex;
+  width: fit-content;
+  top: 10px;
+  margin: auto;
+}
+
+.searchbox {
+  background-color: rgb(230, 225, 225);
+  width: 100%;
+  padding: 5px;
+  font-size: 22px;
+  font-family: serif;
+  border-radius: 3px 3px 6px 6px;
+  border: none;
+  box-shadow: 0 3px 5px rgb(212, 113, 21);
+  outline: none;
+  margin-bottom: 20px;
+  transition: 0.4 ease;
+  text-transform: capitalize;
+}
+
+.searchbox:focus {
+  background-color: rgb(249, 248, 248);
+}
+
+.cityname {
+  padding: 20px;
+  width: fit-content;
+  min-width: 50px;
+  height: 50%;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 4px 3px 4px rgb(183, 174, 174);
+  background-color: rgba(235, 237, 239, 0.94);
+  text-align: center;
+  margin: auto;
+  border-radius: 7px;
+  box-shadow: 0 5px 5px rgb(146, 139, 139);
+  margin-bottom: 30px;
+}
+
+.temperature {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: rgba(154, 151, 151, 0.666);
+  color: rgb(229, 234, 234);
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 3px 3px rgb(29, 28, 28);
+  margin-bottom: 30px;
+}
+
+.mainTemp {
+  margin: auto;
+  font-size: 70px;
+}
+
+.minTemp {
+  font-size: 20px;
+  margin: auto;
+
+}
+
+.maxTemp {
+  font-size: 20px;
+  margin: auto;
+
+}
+
+.currentDate {
+  font-size: larger;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+}
+
+.condition {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+  line-height: 100px;
+}
+
+.conditionIcon {
+  margin-right: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+
+.error {
+  animation: blinker 1.5s linear infinite;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.2;
+  }
+}
